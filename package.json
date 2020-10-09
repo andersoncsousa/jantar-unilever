@@ -1,0 +1,52 @@
+{
+  "name": "Brasa-na-Mesa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "author": "Prazeres da Mesa",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-core": "^6.26.3",
+    "babel-install": "2.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^3.6.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "0.4.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^0.21.0",
+    "tinify-loader": "^1.0.0",
+    "tinypng-webpack-plugin": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.5",
+    "autoprefixer": "^9.8.5",
+    "bootstrap": "^4.5.0",
+    "browserslist": "^4.13.0",
+    "bundle-loader": "^0.5.6",
+    "caniuse-lite": "^1.0.30001094",
+    "cross-env": "^6.0.3",
+    "jquery": "^3.5.1",
+    "manage-htaccess": "^1.0.0",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.1",
+    "postcss-cli": "^7.1.1",
+    "simple-parallax-js": "^5.6.2"
+  }
+}

@@ -1,0 +1,575 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Autor: Prazeres da Mesa */
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Estilo btnUpHome  */
+.btnUpTopo {
+    width: 100%;
+    max-width: 60px;
+    color: #eb2427;
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100000000;
+}
+
+.btnUpTopo:hover {
+    color: red;
+}
+
+/* Box Titulo e logo */
+.boxLogoTitle{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.title-session1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    background-color: #ffffff;
+    padding:5px;
+    z-index: 6;
+}
+
+.imgLogoTitle{
+    width: 100%;
+    max-width: 200px;
+    z-index: 6;
+    background-color: #fff;
+    padding: 10px;
+}
+
+@media(max-width:1400.98px){
+    .imgLogoTitle{
+        max-width: 150px;
+    }
+}
+
+@media(max-width:650.98px){
+    .boxLogoTitle{
+        margin-top: 15px;
+    }
+    .title-session1{
+        font-size: 1.8rem !important;
+    }
+    .imgLogoTitle{
+        max-width: 130px !important;
+    }
+}
+
+/* Home Session  */
+.homeSession {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    z-index: 9;
+    padding: 15px;
+}
+
+.img-logo img{
+    width:100%;
+    max-width: 200px;
+}
+
+.boxHome{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+}
+
+.box-home-logo{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 150px;
+}
+
+.box-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+}
+
+.img-chef{
+    width:100%;
+    max-width: 500px;
+    position: absolute;
+    bottom: 0;
+}
+
+.img-fundo img{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right:0;
+    left: 0;
+    z-index: 3;
+}
+
+.img-fundo-rodape{
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 8;
+}
+
+.btn-live{
+    width:100%;
+    max-width: 250px;
+    color: #ffffff;
+    font-size: 2rem;
+    background-color: #014983;
+    margin: 30px 0 30px 0;
+}
+
+.btn-live:hover{
+    background-color: #ffffff;
+    color: #014983;
+}
+
+.box-home-logo>h2{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #004c77;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+}
+
+.box-home-logo>h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #088646;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+}
+
+.box-home-logo>h3>span{
+    font-size: 2.3rem;
+}
+
+.box-home-logo>h4{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1f4583;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+}
+
+@media(max-width:998.98px){
+    .boxHome{
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width:650.98px){
+    
+    
+}
+
+@media(max-width:450.98px){
+    
+    
+}
+
+/* Contato */
+.contatoSession {
+    width: 100%;
+    height: 100vh;
+    background-color: #646464;
+}
+
+.box-contato{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.logos-contato{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.title-session2{
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    /* padding-left: 130px; */
+}
+
+@media (max-width: 991.98px) {
+    .contato-p {
+        margin-right: 0px;
+        font-size: 0.8rem;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 650.98px) {
+    /* .title-session2{
+        text-align: center;
+        padding-left:0;
+    } */
+    .logos-contato{
+        max-width: 350px;
+    }
+}
+
+/* Barra de Mídias Sociais */
+
+.box-social-media{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-media-menu-nav-icon {
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.social-media-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media-menu-nav-icon:hover {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.social-media-menu-nav-icon-box {
+    margin: 0 auto;
+}
+
+.social-media-menu-navl-icon-box {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+@media (max-width: 576.5px) {
+    .social-media-menu-nav {
+        margin-top: 140px;
+    }
+}
+
+/* Rodape */
+.rodapeSession {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.row-rodape{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.caixa-logos {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.caixa-txt {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.caixa-txt h4 {
+    color: #000000;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.rodape-logos {
+    width: 100%;
+}
+
+.logosPDM {
+    width: 100%;
+    max-width: 140px;
+    display: block;
+    padding:0;
+}
+
+.logosPDM-img {
+    width: 100%;
+    max-width: 160px;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* tamanhos de logos não padrão */
+.max {
+    max-width: 300px !important;
+}
+
+.max2 {
+    max-width: 250px !important;
+}
+
+.max3 {
+    max-width: 200px !important;
+}
+
+.max4 {
+    max-width: 450px !important;
+}
+
+@media (min-width: 576px) {
+
+    .col-sm-1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 13%;
+        flex: 0 0 13%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+}
+
+.assinatura p {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media (max-width: 991.98px) {
+    .assinatura p {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+}
+
+.inscricaoSession{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscricaoSession>img{
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    padding:10px;
+}
+
+.FormInscricao{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+}
+
+.FormInscricao>h3{
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+}
+
+.FormInscricao>button{
+    width: 100%;
+    max-width: 300px;
+    color: #ffffff;
+    display: block;
+    background-color: #eb2427;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.sucessoSession{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+.sucessoSession>h3{
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sucessoSession>a{
+    width: 100%;
+    max-width: 200px;
+    font-size: 1.7rem;
+    background-color: #eb2427;
+    color: #ffffff;
+}
+
+.direto-cadas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.direto-cadas>p{
+    font-size: 1.5rem;
+    color:#000000;
+    font-weight: 700;
+}
+
+.direto-cadas>a{
+    width: 100%;
+    max-width: 250px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background-color: #eb2427;
+}
+
+@media(max-width:650.98px){
+    .FormInscricao>h3{
+        font-size: 1.3rem;
+    }
+}
