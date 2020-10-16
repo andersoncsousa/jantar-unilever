@@ -31,82 +31,6 @@ body {
     height: 100%;
 }
 
-/* Estilo btnUpHome  */
-.btnUpTopo {
-    width: 100%;
-    max-width: 60px;
-    color: #eb2427;
-    font-size: 40px;
-    margin-bottom: 10px;
-    display: block;
-    cursor: pointer;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 100000000;
-}
-
-.btnUpTopo:hover {
-    color: red;
-}
-
-/* Box Titulo e logo */
-.boxLogoTitle{
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    margin-top: 20px;
-}
-
-.title-session1{
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #000000;
-    text-align: center;
-    background-color: #ffffff;
-    padding:5px;
-    z-index: 6;
-}
-
-.imgLogoTitle{
-    width: 100%;
-    max-width: 200px;
-    z-index: 6;
-    background-color: #fff;
-    padding: 10px;
-}
-
-@media(max-width:1400.98px){
-    .imgLogoTitle{
-        max-width: 150px;
-    }
-}
-
-@media(max-width:650.98px){
-    .boxLogoTitle{
-        margin-top: 15px;
-    }
-    .title-session1{
-        font-size: 1.8rem !important;
-    }
-    .imgLogoTitle{
-        max-width: 130px !important;
-    }
-}
-
 /* Home Session  */
 .homeSession {
     width: 100%;
@@ -118,9 +42,9 @@ body {
     align-items: center;
 }
 
-.img-logo{
+.box-img-logo{
     width: 100%;
-    max-width: 400px;
+    max-width: 260px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -132,9 +56,10 @@ body {
     padding: 15px;
 }
 
-.img-logo img{
+.box-img-logo>img{
     width:100%;
-    max-width: 200px;
+    max-width: 130px;
+    padding-right: 10px;
 }
 
 .boxHome{
@@ -146,33 +71,36 @@ body {
     z-index: 7;
 }
 
-.box-home-logo{
+.box-text-home{
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 150px;
+    z-index: 9;
+    position: relative;
+    left: 200px;
+    bottom: 113px;
 }
 
-.box-text{
+.box-chef-home{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 7;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.img-chef{
+.box-chef-home>.img-chef{
     width:100%;
-    max-width: 500px;
+    max-width: 400px;
     position: absolute;
+    right:200px;
     bottom: 0;
 }
 
-.img-fundo img{
+.img-fundo>img{
     width:100%;
     height: 100vh;
     position: absolute;
@@ -191,11 +119,11 @@ body {
 
 .btn-live{
     width:100%;
-    max-width: 250px;
+    max-width: 230px;
     color: #ffffff;
     font-size: 2rem;
     background-color: #014983;
-    margin: 30px 0 30px 0;
+    margin: 0 0 15px 0;
 }
 
 .btn-live:hover{
@@ -203,8 +131,8 @@ body {
     color: #014983;
 }
 
-.box-home-logo>h2{
-    font-size: 3.2rem;
+.box-text-home>h2{
+    font-size: 3rem;
     font-weight: 900;
     color: #004c77;
     text-align: left;
@@ -212,8 +140,8 @@ body {
     letter-spacing: 2.3px;
 }
 
-.box-home-logo>h3{
-    font-size: 2.8rem;
+.box-text-home>h3{
+    font-size: 2.4rem;
     font-weight: 700;
     color: #088646;
     text-align: left;
@@ -221,12 +149,12 @@ body {
     letter-spacing: 2.3px;
 }
 
-.box-home-logo>h3>span{
-    font-size: 2.3rem;
+.box-text-home>h3>span{
+    font-size: 1.7rem;
 }
 
-.box-home-logo>h4{
-    font-size: 2.5rem;
+.box-text-home>h4{
+    font-size: 1.8rem;
     font-weight: 500;
     color: #1f4583;
     text-align: left;
@@ -234,11 +162,14 @@ body {
     letter-spacing: 2.3px;
 }
 
+.mzero{
+    line-height: 2.5rem;
+}
+
 @media(max-width:998.98px){
     .boxHome{
         flex-direction: column;
-    }
-    
+    }    
 }
 
 @media(max-width:650.98px){
@@ -283,14 +214,6 @@ body {
     margin: 0 auto;
 }
 
-.title-session2{
-    font-size: 2.5rem;
-    color: #ffffff;
-    font-weight: 500;
-    text-align: center;
-    /* padding-left: 130px; */
-}
-
 @media (max-width: 991.98px) {
     .contato-p {
         margin-right: 0px;
@@ -300,17 +223,12 @@ body {
 }
 
 @media (max-width: 650.98px) {
-    /* .title-session2{
-        text-align: center;
-        padding-left:0;
-    } */
     .logos-contato{
         max-width: 350px;
     }
 }
 
 /* Barra de Mídias Sociais */
-
 .box-social-media{
     width: 100%;
     max-width: 800px;
@@ -452,15 +370,6 @@ body {
     max-width: 450px !important;
 }
 
-@media (min-width: 576px) {
-
-    .col-sm-1 {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 13%;
-        flex: 0 0 13%;
-    }
-}
-
 /* Footer */
 footer {
     background-color: #000000;
@@ -478,98 +387,5 @@ footer {
     .assinatura p {
         font-size: 0.7rem;
         padding: 10px;
-    }
-}
-
-.inscricaoSession{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.inscricaoSession>img{
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    padding:10px;
-}
-
-.FormInscricao{
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    padding: 10px;
-}
-
-.FormInscricao>h3{
-    font-size: 2rem;
-    color: #000000;
-    text-align: center;
-}
-
-.FormInscricao>button{
-    width: 100%;
-    max-width: 300px;
-    color: #ffffff;
-    display: block;
-    background-color: #eb2427;
-    justify-content: center;
-    margin:0 auto;
-}
-
-.sucessoSession{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:20px;
-}
-
-.sucessoSession>h3{
-    font-size: 2rem;
-    color: #000000;
-    font-weight: 700;
-    text-align: center;
-}
-
-.sucessoSession>a{
-    width: 100%;
-    max-width: 200px;
-    font-size: 1.7rem;
-    background-color: #eb2427;
-    color: #ffffff;
-}
-
-.direto-cadas{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.direto-cadas>p{
-    font-size: 1.5rem;
-    color:#000000;
-    font-weight: 700;
-}
-
-.direto-cadas>a{
-    width: 100%;
-    max-width: 250px;
-    font-size: 1.3rem;
-    color: #ffffff;
-    background-color: #eb2427;
-}
-
-@media(max-width:650.98px){
-    .FormInscricao>h3{
-        font-size: 1.3rem;
     }
 }
