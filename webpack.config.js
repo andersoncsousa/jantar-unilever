@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-// const tinyPngWebpackPlugin = require('tinypng-webpack-plugin')
+const tinyPngWebpackPlugin = require('tinypng-webpack-plugin')
 
 module.exports = {
     mode: modoDev ? 'development' : 'production',
@@ -42,17 +42,17 @@ module.exports = {
             filename: 'unilever.html',
             inject: 'body'
         }),
-        // new tinyPngWebpackPlugin({
-        //     // key:"6Mb5VFwMQ3pBTqFpJk45CNHDSdpGkHL5",
-        //     // key:"M38Y2383ZRQ5HF1wXDXwHF41KnqslLwg",
-        //     // key:"vwpvh337rWH6nhVp6LkzkND9fBJlTr9S",
-        //     // key:"Wf4R6bHhrk3FnLp4rKv6564MtqKhqC30",
-        //     // key:"1Vn3FkmHwkYwykxTMpBNRxxdBg7NNVhJ",
-        //     // key:"zSMH5vTMGgn0kS4df2rFy15DW3JpmJJJ",
-        //     key: "RBCbGLMh4PdCZTWbNZykFFtgCcX7jTWS",
-        //     // key:"5MSVq53NK3VKZyjxhLLSGT02JXdZ0MyT",
-        //     ext: ['png', 'jpeg', 'jpg'],
-        // }),
+        new tinyPngWebpackPlugin({
+            // key:"6Mb5VFwMQ3pBTqFpJk45CNHDSdpGkHL5",
+            // key:"M38Y2383ZRQ5HF1wXDXwHF41KnqslLwg",
+            // key:"vwpvh337rWH6nhVp6LkzkND9fBJlTr9S",
+            // key:"Wf4R6bHhrk3FnLp4rKv6564MtqKhqC30",
+            // key:"1Vn3FkmHwkYwykxTMpBNRxxdBg7NNVhJ",
+            // key:"zSMH5vTMGgn0kS4df2rFy15DW3JpmJJJ",
+            key: "RBCbGLMh4PdCZTWbNZykFFtgCcX7jTWS",
+            // key:"5MSVq53NK3VKZyjxhLLSGT02JXdZ0MyT",
+            ext: ['png', 'jpeg', 'jpg'],
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
